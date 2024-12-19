@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="text-m" lang="zh-Hant-TW">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Developer" content="楊軒羽 Shen Yang | Front-end Developer | 前端設計工程師">
+		<title>國立中央大學-飛學不可</title>
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-icons.css">
+		<link rel="stylesheet" href="css/tailwind.min.css">
+		<link rel="stylesheet" href="css/fontawesome.min.css">
+		<!-- vendors:css -->
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+		<!-- endinject -->
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+
+	<body id="top" class="index tw-min-h-screen">
+		<span class="tw-hidden">Some images has been designed using resources from <a href="https://unsplash.com/">Unsplash</a> &amp; <a href="https://pixabay.com/">Pixabay</a> &amp; <a href="https://www.pexels.com/">Pexels</a> &amp; <a href="https://www.freepik.com/">Freepik</a> and some icons from <a href="https://www.flaticon.com/">Flaticon</a></span>
+		<!-- header -->
+		<header class="header bg-white shadow-lg mb-lg-4">
+			<!-- container -->
+		  <div class=" container-fluid">
+		    <nav class="navbar navbar-expand-xl">
+		      <!-- Logo -->
+		      <div class="logoBG col d-flex me-auto flex-wrap">
+		        <div class="d-flex align-items-center w-100 me-auto lg:tw-w-auto">
+		          <a class="logo navbar-brand fs-5" href="index.html">
+		            <h1 class="visually-hidden-focusable">國立中央大學-飛學不可</h1>
+		            <img class="w-100" src="img/logo.png" alt="國立中央大學Logo"273>
+		          </a>
+		          <a class="logo navbar-brand ms-2" href="" title="">
+		            <img src="img/logo2.svg" alt="飛學不可Logo"205>
+		          </a>
+		        </div>
+		      </div>
+		      <!-- /Logo -->
+		      <!-- rightCol -->
+		      <div class="rightCol">
+		        <!-- offcanvas -->
+		        <div id="navbarOffcanvas" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="offcanvasTitle">
+		          <div class="offcanvas-header">
+		            <h2 id="offcanvasTitle" class="offcanvas-title h5"><span class="visually-hidden"></span></h2>
+		            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		          </div>
+		          <ul id="mainmenuAccordion" class="mainmenu accordion navbar-nav nav-underline offcanvas-body align-items-xl-cente">
+		            <li class="nav-item flex-shrink-0 dropdown">
+		              <a class="nav-link fw-bold" href="">類別</a>
+		            </li>
+		            <li class="nav-item flex-shrink-0 dropdown">
+		              <a class="nav-link fw-bold" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="">作者<i class="bi bi-chevron-right ms-2 d-lg-none"></i></a>
+		              <!-- Dropdown -->
+		              <div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
+		                <ul class="list-group m-0">
+		                  <li class="list-group-item p-0 tw-bg-transparent">
+		                    <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Item</span></a>
+		                  </li>
+		                  <li class="list-group-item p-0 tw-bg-transparent">
+		                    <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Item</span></a>
+		                  </li>
+		                </ul>
+		              </div>
+		              <!-- /Dropdown -->
+		            </li>
+		            <li class="nav-item flex-shrink-0 dropdown">
+		              <a class="nav-link fw-bold" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="">熱門精選<i class="bi bi-chevron-right ms-2 d-lg-none"></i></a>
+		              <!-- Dropdown -->
+		              <div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
+		                <ul class="list-group m-0">
+		                  <li class="list-group-item p-0 tw-bg-transparent">
+		                    <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+		                    <ul class="m-0 p-0">
+		                      <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                        <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                      </li>
+		                      <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                        <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                      </li>
+		                    </ul>
+		                  </li>
+		                  <li class="list-group-item p-0 tw-bg-transparent">
+		                    <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+		                    <ul class="m-0 p-0">
+		                      <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                        <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                      </li>
+		                      <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                        <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                      </li>
+		                    </ul>
+		                  </li>
+		                </ul>
+		              </div>
+		              <!-- /Dropdown -->
+		            </li>
+		            <li class="nav-item flex-shrink-0 dropdown">
+		              <a class="nav-link fw-bold" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="">Q&amp;A<i class="bi bi-chevron-right ms-2 d-lg-none"></i></a>
+		              <!-- Dropdown -->
+		              <div class="indent dropdown-menu overflow-auto border-0 py-0 tw-bg-white tw-bg-opacity-95">
+		                <ul class="list-group m-0">
+		                  <li class="list-group-item p-0 tw-bg-transparent">
+		                    <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+		                    <ul class="m-0 p-0">
+		                      <li class="list-group-item p-0 border-0 tw-bg-transparent">
+		                        <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                        <ul class="m-0 p-0">
+		                          <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                            <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                          </li>
+		                          <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                            <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                          </li>
+		                        </ul>
+		                      </li>
+		                    </ul>
+		                  </li>
+		                  <li class="list-group-item p-0 tw-bg-transparent">
+		                    <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#"><span>Type</span></a>
+		                    <ul class="m-0 p-0">
+		                      <li class="list-group-item p-0 border-0 tw-bg-transparent">
+		                        <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                        <ul class="m-0 p-0">
+		                          <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                            <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                          </li>
+		                          <li class="list-group-item p-0 d-flex justify-content-between align-items-center border-0 tw-bg-transparent">
+		                            <a class="list-group-item-action d-flex align-items-stretch justify-content-between align-items-center p-2 px-3" href="#">Item</a>
+		                          </li>
+		                        </ul>
+		                      </li>
+		                    </ul>
+		                  </li>
+		                </ul>
+		              </div>
+		              <!-- /Dropdown -->
+		            </li>
+		            <li class="nav-item flex-shrink-0 dropdown">
+		              <a class="nav-link fw-bold" href="">登入/註冊</a>
+		            </li>
+		          </ul>
+		        </div>
+		        <!-- /offcanvas -->
+		      </div>
+		      <!-- /rightCol -->
+		      <!-- searchBar -->
+		      <div class="searchBar row align-items-center ms-xxl-4">
+		        <!-- searchBtn -->
+		        <div class="col-auto">
+		          <button class="btn btn-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#searchIput" aria-expanded="false" aria-controls="searchIput"><i class="bi bi-search me-2"></i>全站搜尋</button>
+		        </div>
+		        <!-- /searchBtn -->
+		        <!-- input -->
+		        <div id="searchIput" class="col hstack gap-2 collapse" style="transition:none;">
+		          <input class="form-control form-control-sm" type="search" placeholder="" aria-label="搜尋">
+		          <button class="btn btn-primary btn-sm flex-shrink-0" type="submit">確定</button>
+		        </div>
+		        <!-- /input -->
+		        <!-- togglerBtn -->
+		        <div class="col-auto">
+		          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+		            <i class="h2 bi bi-list text-primary tw-leading-[0]"></i>
+		          </button>
+		        </div>
+		        <!-- /togglerBtn -->
+		      </div>
+		      <!-- /searchBar -->
+		    </nav>
+		  </div>
+		  <!-- /container -->
+		</header>
+		<!-- /header -->
+
+		<main>
+			<section class="vstack gap-4 tw-p-0 tw-relative">
+			  <!-- slides -->
+			  <div class="swiperSlides oneSlideDotNav circleArrow hoverArrow bg-white">
+			    <div class="swiper">
+			      <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			          <div class="slide tw-relative">
+			            <a class="d-block" href="">
+			              <span class="tw-sr-only">圖片說明</span>
+			              <div class="aspect ratio_custom tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://fakeimg.pl/1900x500/)">
+			              </div>
+			            </a>
+			          </div>
+			        </div>
+			        <div class="swiper-slide">
+			          <div class="slide tw-relative">
+			            <a class="d-block" href="">
+			              <div class="aspect ratio_custom tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(img/slide.png)">
+			              </div>
+			            </a>
+			          </div>
+			        </div>
+			        <div class="swiper-slide">
+			          <div class="slide tw-relative">
+			            <a class="d-block" href="">
+			              <div class="aspect ratio_custom tw-bg-cover tw-bg-no-repeat tw-bg-center tw-bg-gray-200" style="background-image: url(https://picsum.photos/1900/800)">
+			              </div>
+			            </a>
+			          </div>
+			        </div>
+			      </div>
+			    </div>
+			    <div class="swiper-pagination oneSlideDotNav-pagination"></div>
+			    <div class="swiper-button-prev oneSlideDotNav-prev"></div>
+			    <div class="swiper-button-next oneSlideDotNav-next"></div>
+			  </div>
+			  <!-- /slides -->
+			  <!-- container -->
+			  <div class="container-fluid vstack gap-4">
+			    <h2 class="h3 text-primary fw-bold hstack gap-2 ps-2 pt-2 ps-sm-3 pt-sm-3 position-relative"><i class="bi bi-square-fill text-secondary position-absolute z-n1 top-0 start-0"></i>熱門精選<a class="btn btn-outline-orange bg-white border-0 rounded-pill">more→</a></h2>
+			    <!-- hot -->
+			    <div class="hot bg-white shadow rounded px-2">
+			      <!-- row -->
+			      <div class="row">
+			        <!-- left column -->
+			        <div class="col col-lg-2 bg-secondary bg-opacity-50 lg:tw-rounded-l-md mb-2 m-lg-0">
+			          <!-- tabs -->
+			          <div class="nav h3 text-primary fw-bold flex-nowrap flex-lg-column py-lg-2 overflow-auto" role="tablist" aria-orientation="vertical">
+			            <button class="nav-link flex-shrink-0 active" id="tab1" data-bs-toggle="pill" data-bs-target="#tabpane1" type="button" role="tab" aria-controls="tabpane1" aria-selected="true"><span class="mb-2 m-lg-0 pe-lg-2">全部</span></button>
+			            <button class="nav-link flex-shrink-0" id="tab2" data-bs-toggle="pill" data-bs-target="#tabpane2" type="button" role="tab" aria-controls="tabpane2" aria-selected="false"><span class="mb-2 m-lg-0 pe-lg-2">電子書</span></button>
+			            <button class="nav-link flex-shrink-0" id="tab3" data-bs-toggle="pill" data-bs-target="#tabpane3" type="button" role="tab" aria-controls="tabpane3" aria-selected="false"><span class="mb-2 m-lg-0 pe-lg-2">課程</span></button>
+			            <button class="nav-link flex-shrink-0" id="tab4" data-bs-toggle="pill" data-bs-target="#tabpane4" type="button" role="tab" aria-controls="tabpane4" aria-selected="false"><span class="mb-2 m-lg-0 pe-lg-2">有聲書</span></button>
+			            <button class="nav-link flex-shrink-0" id="tab5" data-bs-toggle="pill" data-bs-target="#tabpane5" type="button" role="tab" aria-controls="tabpane5" aria-selected="false"><span class="mb-2 m-lg-0 pe-lg-2">音樂</span></button>
+			          </div>
+			          <!-- /tabs -->
+			        </div>
+			        <!-- /left column -->
+			        <!-- right column -->
+			        <div class="col-lg col-lg-10">
+			          <!-- tabContent -->
+			          <div class="tab-content p-2 p-lg-3 pt-lg-4">
+			            <!-- tab-pane -->
+			            <div class="tab-pane fade show active" id="tabpane1" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+			              <!-- slides -->
+			              <div class="swiperSlides imgSlide capImg">
+			                <div class="swiper">
+			                  <div class="swiper-wrapper">
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                    <div class="swiper-slide">
+			                      <div class="slide">
+			                        <a class="hover:tw-opacity-90 text-decoration-none vstack gap-1 position-relative text-end" href>
+			                          <div class="position-relative"><div class="slideBG rounded-2 ratio ratio-1x1 border border-dark" style="background: url(img/slash.png);"></div><div class="slideIMG rounded-2 position-absolute end-0"><p class="ranking h5 fw-bold text-start mb-1">No.1</p><div class="ratio ratio-1x1"><img src="https://fakeimg.pl/200x200/" class="object-fit-cover border rounded" alt=""></div></div></div><h2 class="title h4 fw-bold text-body text-truncate m-0">自卑與超越</h2><small class="d-block text-body text-truncate">吳勇立、李英立</small>
+			                        </a>
+			                      </div>
+			                    </div>
+			                  </div>
+			                </div>
+			                <div class="navBar position-relative mt-4 pt-4">
+			                  <div class="swiper-pagination imgSlide-pagination"></div>
+			                  <div class="swiper-button-prev imgSlide-prev"></div>
+			                  <div class="swiper-button-next imgSlide-next"></div>
+			                </div>
+			              </div>
+			              <!-- /slides -->
+			            </div>
+			            <!-- /tab-pane -->
+			            <!-- tab-pane -->
+			            <div class="tab-pane fade" id="tabpane2" role="tabpanel" aria-labelledby="tab2" tabindex="0">tabpane2 content</div>
+			            <div class="tab-pane fade" id="tabpane3" role="tabpanel" aria-labelledby="tab3" tabindex="0">tabpane3 content</div>
+			            <div class="tab-pane fade" id="tabpane4" role="tabpanel" aria-labelledby="tab4" tabindex="0">tabpane4 content</div>
+			            <div class="tab-pane fade" id="tabpane5" role="tabpanel" aria-labelledby="tab5" tabindex="0">tabpane5 content</div>
+			            <!-- /tab-pane -->
+			          </div>
+			          <!-- /tabContent -->
+			        </div>
+			        <!-- /right column -->
+			      </div>
+			      <!-- /row -->
+			    </div>
+			    <!-- /hot -->
+			  </div>
+			  <!-- /container -->
+			</section>
+		</main>
+
+		<!-- footer -->
+		<footer bg-white bg-opacity-50>
+		  <div class="footer container-fluid vstack gap-4 p-4 mt-4">
+		    <div class="row row-cols-auto gx-5 gy-2 justify-content-center justify-content-lg-start">
+		      <div class="col">
+		        <div class="logo row g-2 align-items-center text-center text-lg-start">
+		          <div class="col"><img class="d-block" src="img/logo.png" alt="國立中央大學Logo" width="273"></div>
+		          <div class="col"><img class="d-block" src="img/logo2.svg" alt="飛學不可Logo" width="205"></div>
+		        </div>
+		      </div>
+		      <div class="col vstack gap-2 text-center text-lg-start">
+		        <div class="row row-cols-auto g-0 justify-content-center justify-content-lg-start">
+		          <div class="col"><a class="link-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">隱私權政策聲明</a></div>
+		          <div class="col mx-2">｜</div>
+		          <div class="col"><a class="link-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">個資保護聯絡窗口</a></div>
+		          <div class="col mx-2">｜</div>
+		          <div class="col"><a class="link-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="">聯絡方式</a></div>
+		        </div>
+		        <p class="m-0">地址｜11441台北市內湖區文湖街一段91巷40號<a class="link-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-inline-block" href="">【交通資訊】</a></p>
+		        <p class="m-0">電話｜(02) 2657-5996<a class="link-primary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover d-inline-block" href="">【聯絡我們】</a></p>
+		        <p class="m-0">Copyright © 2024 FlySheet Group.</p>
+		      </div>
+		    </div>
+		  </div>
+		</footer>
+		<!-- /footer -->
+		<button id="gototop" class="btn border-0 text-white bg-primary rounded-circle position-fixed bottom-0 end-0 me-3 mb-3 px-2 tw-z-10" title="回到最上" type="button" style="width:48px; height:48px;"><i class="bi bi-arrow-up h4"></i><span class="visually-hidden">回到最上</span></button>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/swiper-bundle.min.js"></script>
+		<script type="module" src="js/script.min.js" defer></script>
+		<script>
+			const oneSlideDotNav = new Swiper(".oneSlideDotNav .swiper", {
+				autoHeight: true,
+				lazy: true,
+				rewind: true,
+				effect: "fade", // only for one slide in perview, more slides will get wrong
+				autoplay: {
+					delay: 5500,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true
+				},
+				pagination: {
+					el: ".oneSlideDotNav-pagination",
+					clickable: true
+				},
+				navigation: {
+					nextEl: ".oneSlideDotNav-next",
+					prevEl: ".oneSlideDotNav-prev"
+				},
+			})
+
+			const imgSlide = new Swiper(".imgSlide .swiper", {
+				lazy: true,
+				slidesPerView: 2,
+				slidesPerGroup: 2,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".imgSlide-next",
+					prevEl: ".imgSlide-prev",
+				},
+				pagination: {
+					el: ".imgSlide-pagination",
+					clickable: true
+				},
+				scrollbar: {
+					el: ".imgSlide-scrollbar",
+					hide: true,
+				},
+				breakpoints: {
+					576: {
+						slidesPerView: 3,
+						slidesPerGroup: 3,
+						spaceBetween: 50,
+					},
+					768: {
+						slidesPerView: 4,
+						slidesPerGroup: 4,
+					},
+					1400: {
+						slidesPerView: 5,
+						slidesPerGroup: 5,
+						spaceBetween: 60,
+					},
+				},
+			})
+		</script>
+	</body>
+</html>

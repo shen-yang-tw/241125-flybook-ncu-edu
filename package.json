@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "description": "Using NVM Node:20.15.0 and Gulp pack the website with Fontawesome, Tailwindcss, and Handlebars",
+  "main": "gulpfile.mjs",
+  "author": "Shen Yang",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "gulp start",
+    "server": "gulp server",
+    "tailwind": "gulp tailwind --development",
+    "temp": "gulp temp --development",
+    "build": "gulp build --production",
+    "buildnotw": "gulp buildnotw --production",
+    "purge": "gulp purge --purge",
+    "build-nohtml": "gulp build-nohtml --production"
+  },
+  "browserslist": [
+    "defaults",
+    "maintained node versions"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.1",
+    "autoprefixer": "^10.4.20",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "debug": "^4.3.7",
+    "handlebars": "^4.7.8",
+    "postcss": "^8.4.49",
+    "swiper": "^11.1.15",
+    "tailwindcss": "^3.4.15"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "6.0.0",
+    "browser-sync": "^3.0.3",
+    "del": "^8.0.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-downloader": "^1.0.4",
+    "gulp-if": "^3.0.0",
+    "gulp-inject": "^5.0.5",
+    "gulp-mode": "^1.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-uglify-es": "^3.0.0",
+    "postcss-import": "^16.1.0"
+  }
+}

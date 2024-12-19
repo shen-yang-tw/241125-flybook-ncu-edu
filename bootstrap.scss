@@ -1,0 +1,176 @@
+@import 'src/scss/functions', 'src/scss/variables', 'src/scss/colors-variables', 'src/scss/color', 'src/scss/mixin';
+
+
+// Your variable overrides
+$primary: $color-primary;
+$secondary: $color-secondary;
+// $success: $color3;
+
+// $theme-colors: (
+//   "primary":    $primary,
+//   "secondary":  $secondary,
+//   "success":    $success,
+//   "info":       $info,
+//   "warning":    $warning,
+//   "danger":     $danger,
+//   "light":      $light,
+//   "dark":       $dark
+// );
+
+// --- Adding custom theme colors ---
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/variables-dark";
+
+// Add a custom color to $theme-colors
+$custom-colors: (
+  "blue": #407AFE,
+  "orange": #E85300,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$utilities: (
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0,
+      5: .05,
+      10: .1,
+      15: .15,
+      20: .2,
+      25: .25,
+      30: .3,
+      35: .35,
+      40: .4,
+      45: .45,
+      50: .5,
+      55: .55,
+      60: .6,
+      65: .65,
+      70: .7,
+      75: .75,
+      80: .8,
+      85: .85,
+      90: .9,
+      95: .95,
+      100: 1,
+    )
+  ),
+  "border-opacity": (
+    css-var: true,
+    class: border-opacity,
+    values: (
+      0: 0,
+      5: .05,
+      10: .1,
+      15: .15,
+      20: .2,
+      25: .25,
+      30: .3,
+      35: .35,
+      40: .4,
+      45: .45,
+      50: .5,
+      55: .55,
+      60: .6,
+      65: .65,
+      70: .7,
+      75: .75,
+      80: .8,
+      85: .85,
+      90: .9,
+      95: .95,
+      100: 1,
+    )
+  ),
+  "bg-opacity": (
+    css-var: true,
+    class: bg-opacity,
+    values: (
+      0: 0,
+      5: .05,
+      10: .1,
+      15: .15,
+      20: .2,
+      25: .25,
+      30: .3,
+      35: .35,
+      40: .4,
+      45: .45,
+      50: .5,
+      55: .55,
+      60: .6,
+      65: .65,
+      70: .7,
+      75: .75,
+      80: .8,
+      85: .85,
+      90: .9,
+      95: .95,
+      100: 1,
+    )
+  ),
+);
+
+$table-striped-bg-factor: .03;
+
+$form-check-input-border: 1px solid rgba(black, 0.2);
+
+$enable-rounded: true;
+// $btn-border-radius: 50rem;
+// $input-border-radius: 50rem;
+// $form-select-border-radius: 50rem;
+
+// --bs-border-radius: 0.375rem;
+// --bs-border-radius-sm: 0.25rem;
+// --bs-border-radius-lg: 0.5rem;
+// --bs-border-radius-xl: 1rem;
+// --bs-border-radius-2xl: 2rem;
+// --bs-border-radius-pill: 50rem;
+
+// $card-border-radius: .375rem;
+// $dropdown-border-radius: .375rem;
+// $list-group-border-radius: .375rem;
+// $alert-border-radius: .375rem;
+// $thumbnail-border-radius: .375rem;
+
+$enable-negative-margins: true;
+// $enable-shadows: true; // if true will enable input placeholder shadow
+
+// $body-bg: #000;
+// $body-color: #111;
+
+$link-color: $color-primary;
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$grid-gutter-width: 1rem;
+
+// @import "node_modules/bootstrap/scss/functions";
+// @import "node_modules/bootstrap/scss/variables";
+// @import "node_modules/bootstrap/scss/variables-dark";
+// @import "node_modules/bootstrap/scss/maps";
+// @import "node_modules/bootstrap/scss/mixins";
+// @import "node_modules/bootstrap/scss/utilities";
+// $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "color": map-merge(
+//       map-get($utilities, "color"),
+//       (
+//         values: map-merge(
+//           map-get(map-get($utilities, "color"), "values"),
+//           (
+//             $all-colors
+//           ),
+//         ),
+//       ),
+//     ),
+//   )
+// );
+// @import "node_modules/bootstrap/scss/utilities/api";
+
+@import 'node_modules/bootstrap/scss/bootstrap';
